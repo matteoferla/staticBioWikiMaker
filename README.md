@@ -1,5 +1,5 @@
 # Demo
-(Here is an example version)[/demo/index.html]
+Here is an [example version](https://rawgit.com/matteoferla/staticBioWikiMaker/master/site/index.html)
 
 # staticBioWikiMaker
 `staticBioWikiMaker(markdown, map, proteomics,entrytemplate,categorytemplate, indexpage)` makes a static set of webpages based on a markdown file.
