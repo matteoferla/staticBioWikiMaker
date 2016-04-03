@@ -4,7 +4,7 @@
 __author__ = "Matteo Ferla. [Github](https://github.com/matteoferla)"
 __email__ = "matteo.ferla@gmail.com"
 __date__ = "13 / 12 / 15"
-__doc__='''
+"""
 staticBioWikiMaker(markdown, proteomics,entrytemplate,categorytemplate, indexpage) makes a static set of webpages based on a markdown file.
 
 The level 1 headers on the markdown file are splint into entries and inserted into a template (entrytemplate), which has a $title, $menu and $content keywords for substitution.
@@ -19,8 +19,7 @@ The entries will generate the dropdown menu $menu, but entries can be generated 
 There are a few extra features not discussed.
 
 Also to get google drive to serve the html as such the <id> needs to be put in https://googledrive.com/host/<id>
-'''
-
+"""
 
 import markdown as md
 import re
@@ -107,6 +106,7 @@ class mdentry():
         return self.content
 
 def genelookup_factory(proteomics):
+    #this should be a class...
     ws = pd.read_excel(proteomics, index_col=0)
     nws=ws/ws.median()
     def genelookup_fun(gene):
@@ -126,7 +126,7 @@ def genelookup_factory(proteomics):
             return None
     return genelookup_fun
 
-def staticBioWikiMaker(markdown, proteomics,entrytemplate,categorytemplate, indexpage):
+def staticBioWikiMaker(markdown, mapfile, proteomics,entrytemplate,categorytemplate, indexpage):
     #make the database
     mdtxt=open(markdown,encoding="utf-8").read()
     db=[mdentry(a) for a in re.split("\n(?=\# )",mdtxt)]  #fix again absent spaces and firt wonky one TODO
@@ -167,14 +167,17 @@ def staticBioWikiMaker(markdown, proteomics,entrytemplate,categorytemplate, inde
                     content[gene]+=chart[gene]
             genedex={gene: catmould.substitute(title=gene, content=content[gene]) for gene in topic.genes}
             html=Template(html).safe_substitute(genedex)
-        open("site/"+topic.title+".html","w", encoding="utf-8").write(html)
+        try:
+            open("site/"+topic.title+".html","w", encoding="utf-8").write(html)
+        except FileNotFoundError:
+            raise ("site/"+topic.title+".html could not be made. Does the folder exist. The script does not make it in case it is weird location.")
     ###special pages
     #main. for now I'll botch the conversion of SVG to links I am not well versed with ET. Please do not copy.
     #svg=open("data/images/map.svg").read()
     #svg=re.sub("<\!.*?>","",svg)
     #svgtree=et.fromstring(svg)
     et.register_namespace("","http://www.w3.org/2000/svg")
-    svgtree=et.parse("data/map.svg").getroot()
+    svgtree=et.parse(mapfile).getroot()
     #<a xlink:href="#target">
     svgtree.attrib["width"]="100%"
     del svgtree.attrib["height"]
@@ -210,13 +213,13 @@ def staticBioWikiMaker(markdown, proteomics,entrytemplate,categorytemplate, inde
                         elem.attrib["onclick"]="javascript:location.href='"+mod+".html'"
     index=Template(open(indexpage).read()).substitute(title="Gene network", content=et.tostring(svgtree, encoding="utf-8").decode(), menu=menu)
     open("site/index.html","w", encoding="utf-8").write(index)
-    #changes.
+    #changes. but could be changed to compounds, say
     changedex={x:set() for x in mdentry.plan_options}
     for topic in db:
         for strategy in topic.plan:
             changedex[strategy].update(topic.plan[strategy])
-    changetxt="<div class='alert alert-danger' role='alert'>This section is deprecated.</div>\n"+"\n".join(["# "+strategy.capitalize()+"\n"+"\n".join(changedex[strategy]) for strategy in mdentry.plan_options])
+    changetxt="\n".join(["# "+strategy.capitalize()+"\n"+"\n".join(changedex[strategy]) for strategy in mdentry.plan_options])
     open("site/changes.html","w", encoding="utf-8").write(modmould.safe_substitute(menu=menu, title="changes",content=md.markdown(changetxt, ['markdown.extensions.extra'])))
 
 if __name__=="__main__":
-    staticBioWikiMaker("modules.md",'proteomics.xlsx',"data/template.html", "data/cat_template.html","data/itemplate.html")
+    staticBioWikiMaker("demo/modules.md",'demo/map.svg','demo/proteomics.xlsx',"demo/template.html", "demo/cat_template.html","demo/itemplate.html")

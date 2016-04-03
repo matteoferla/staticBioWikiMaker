@@ -1,5 +1,8 @@
+# Demo
+(Here is an example version)[/demo/index.html]
+
 # staticBioWikiMaker
-staticBioWikiMaker(markdown, proteomics,entrytemplate,categorytemplate, indexpage) makes a static set of webpages based on a markdown file.
+`staticBioWikiMaker(markdown, map, proteomics,entrytemplate,categorytemplate, indexpage)` makes a static set of webpages based on a markdown file.
 
 The level 1 headers on the markdown file are splint into entries and inserted into a template (entrytemplate), which has a $title, $menu and $content keywords for substitution.
 

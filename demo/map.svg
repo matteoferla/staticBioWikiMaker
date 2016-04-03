@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="499.475px" height="380.98px" viewBox="0 0 499.475 380.98" enable-background="new 0 0 499.475 380.98"
+	 xml:space="preserve">
+<g id="Layer_1">
+	<text transform="matrix(1 0 0 1 181.3818 262.2305)" font-family="'MyriadPro-Regular'" font-size="12">Foo</text>
+	<text transform="matrix(1 0 0 1 297.9878 262.2305)" font-family="'MyriadPro-Regular'" font-size="12">Bar</text>
+	<text transform="matrix(1 0 0 1 35.3921 184.6748)" font-family="'MyriadPro-Regular'" font-size="12">dehydro-Foo</text>
+	<text transform="matrix(1 0 0 1 174.8296 184.6748)" font-family="'MyriadPro-Regular'" font-size="12">Foo-ol</text>
+	<text transform="matrix(1 0 0 1 175.2319 107.1191)" font-family="'MyriadPro-Regular'" font-size="12">Foo-al</text>
+	<text transform="matrix(1 0 0 1 160.5142 29.5635)" font-family="'MyriadPro-Regular'" font-size="12">Foo-oic acid</text>
+	<text transform="matrix(1 0 0 1 233.6133 339.5625)" font-family="'MyriadPro-Regular'" font-size="12">Foobar</text>
+	<text transform="matrix(1 0 0 1 290.7222 184.6748)" font-family="'MyriadPro-Regular'" font-size="12">Isobar</text>
+	<text transform="matrix(1 0 0 1 295.876 107.1191)" font-family="'MyriadPro-Regular'" font-size="12">Qux</text>
+	<text transform="matrix(1 0 0 1 424.6797 262.2305)" font-family="'MyriadPro-Regular'" font-size="12">Baz</text>
+	<g>
+		<g>
+			<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="190.892" y1="122.896" x2="190.892" y2="159.527"/>
+			<g>
+				<path d="M190.892,165.562c-1.054-2.84-2.852-6.363-4.756-8.547l4.756,1.72l4.755-1.72
+					C193.742,159.199,191.944,162.722,190.892,165.562z"/>
+			</g>
+		</g>
+	</g>
+	<g>
+		<g>
+			<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="190.892" y1="38.896" x2="190.892" y2="75.527"/>
+			<g>
+				<path d="M190.892,81.562c-1.054-2.84-2.852-6.363-4.756-8.547l4.756,1.72l4.755-1.72
+					C193.742,75.199,191.944,78.723,190.892,81.562z"/>
+			</g>
+		</g>
+	</g>
+	<text transform="matrix(1 0 0 1 146.022 60.229)" font-family="'MyriadPro-It'" font-size="12">fooA</text>
+	<text transform="matrix(1 0 0 1 146.3159 148.229)" font-family="'MyriadPro-It'" font-size="12">fooB</text>
+	<g>
+		<g>
+			<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="190.892" y1="192.896" x2="190.892" y2="229.527"/>
+			<g>
+				<path d="M190.892,235.562c-1.054-2.84-2.852-6.363-4.756-8.547l4.756,1.72l4.755-1.72
+					C193.742,229.199,191.944,232.722,190.892,235.562z"/>
+			</g>
+		</g>
+	</g>
+	<text transform="matrix(1 0 0 1 146.0996 218.229)" font-family="'MyriadPro-It'" font-size="12">fooC</text>
+	<g>
+		<g>
+			<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="303.392" y1="122.896" x2="303.392" y2="159.527"/>
+			<g>
+				<path d="M303.392,165.562c-1.054-2.84-2.852-6.363-4.756-8.547l4.756,1.72l4.755-1.72
+					C306.243,159.199,304.445,162.722,303.392,165.562z"/>
+			</g>
+		</g>
+	</g>
+	<text transform="matrix(1 0 0 1 258.2944 148.229)" font-family="'MyriadPro-It'" font-size="12">barA</text>
+	<g>
+		<g>
+			<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="303.392" y1="192.896" x2="303.392" y2="229.527"/>
+			<g>
+				<path d="M303.392,235.562c-1.054-2.84-2.852-6.363-4.756-8.547l4.756,1.72l4.755-1.72
+					C306.243,229.199,304.445,232.722,303.392,235.562z"/>
+			</g>
+		</g>
+	</g>
+	<text transform="matrix(1 0 0 1 258.5884 218.229)" font-family="'MyriadPro-It'" font-size="12">barB</text>
+	<g>
+		<g>
+			<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="112.094" y1="181.563" x2="157.357" y2="181.563"/>
+			<g>
+				<path d="M106.059,181.563c2.84,1.054,6.363,2.852,8.547,4.756l-1.72-4.756l1.72-4.755
+					C112.422,178.713,108.899,180.511,106.059,181.563z"/>
+			</g>
+			<g>
+				<path d="M163.392,181.563c-2.84,1.054-6.363,2.852-8.547,4.756l1.72-4.756l-1.72-4.755
+					C157.029,178.713,160.552,180.511,163.392,181.563z"/>
+			</g>
+		</g>
+	</g>
+	<text transform="matrix(1 0 0 1 123.9678 176.8965)" font-family="'MyriadPro-It'" font-size="12">fooS</text>
+	<g>
+		<g>
+			<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="318.726" y1="257.537" x2="408.023" y2="257.537"/>
+			<g>
+				<path d="M414.059,257.537c-2.84,1.054-6.363,2.852-8.547,4.756l1.72-4.756l-1.72-4.755
+					C407.695,254.686,411.219,256.484,414.059,257.537z"/>
+			</g>
+		</g>
+	</g>
+	<text transform="matrix(1 0 0 1 355.0762 246.8965)" font-family="'MyriadPro-It'" font-size="12">barX</text>
+	<g>
+		<g>
+			<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="66.726" y1="192.896" x2="66.726" y2="194.896"/>
+			
+				<line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-dasharray="3.8412,3.8412" x1="66.726" y1="198.737" x2="66.726" y2="258.275"/>
+			<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="66.726" y1="260.195" x2="66.726" y2="262.195"/>
+			<g>
+				<path d="M66.726,268.23c-1.054-2.84-2.852-6.363-4.756-8.547l4.756,1.72l4.755-1.72
+					C69.576,261.867,67.778,265.391,66.726,268.23z"/>
+			</g>
+		</g>
+	</g>
+	<text transform="matrix(1 0 0 1 33.0303 288.8965)" font-family="'MyriadPro-Regular'" font-size="12">Nerf pathway</text>
+	<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M204.641,259.646c0,0,42.5,7.75,42.5,29.25"/>
+	<g>
+		<g>
+			<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M289.641,259.646c0,0-42.5,7.75-42.5,29.25v26.715"/>
+			<g>
+				<path d="M247.141,321.646c-1.054-2.84-2.852-6.363-4.756-8.547l4.756,1.72l4.755-1.72
+					C249.991,315.283,248.193,318.807,247.141,321.646z"/>
+			</g>
+		</g>
+	</g>
+</g>
+<g id="clickareas">
+	<rect id="bar_x5F_pathway" x="247.141" y="75.563" fill="#312783" fill-opacity="0" width="91.584" height="198.708"/>
+	<rect id="bar_x5F_degradation" x="330.725" y="227.896" fill="#312783" fill-opacity="0" width="124" height="52.334"/>
+	<rect id="foo_x5F_pathway" x="140.058" y="11.563" fill="#312783" fill-opacity="0" width="93.333" height="262.708"/>
+	<rect id="foobar_x5F_synthase" x="189.391" y="268.23" fill="#312783" fill-opacity="0" width="124" height="76.333"/>
+	<rect id="nerf_x5F_pathway" x="16.058" y="154.729" fill="#312783" fill-opacity="0" width="124" height="151.667"/>
+</g>
+</svg>
